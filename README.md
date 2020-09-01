@@ -1,5 +1,16 @@
-# Gulp Starter for CSS Tricks Tutorial  
-
-This repo is a gulp starter for this CSS Tricks tutorial. 
-
-Remember to do run the `npm install` command after cloning this repo :) # LandingPage-2
+ # LandingPage-2
+ 
+ V3.0
+ 
+ -> Animation AOS library
+ 
+ V2.1
+ 
+ -> Fix bug nav
+ 
+ V2.0
+ 
+ -> New Nav
+ -> Nav Scripts
+ 
+ V1.0 Template 
