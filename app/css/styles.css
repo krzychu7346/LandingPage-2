@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+nav {
+  height: 10vh;
+  background-color: #1e66bc; }
+  nav .prog {
+    width: 0;
+    height: 50px;
+    background-color: red; }
+  nav .nav-links {
+    display: flex;
+    list-style: none;
+    width: 50%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto; }
+    nav .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 5px 0px; }
+      nav .nav-links li a:hover {
+        color: #ffffff; }
+    nav .nav-links .active {
+      border-bottom: 5px solid #f7f7f7;
+      transition: all 0.2s ease; }
+
+@media screen and (max-width: 900px) {
+  .line {
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 5px;
+    border-radius: 10px; }
+  nav {
+    position: relative;
+    background: none; }
+    nav .nav-icon-mobile {
+      cursor: pointer;
+      position: absolute;
+      right: 5%;
+      top: 50%;
+      transform: translate(-5%, -50%);
+      z-index: 2; }
+    nav .nav-links {
+      position: fixed;
+      background-color: #5b78c7;
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      clip-path: circle(100px at 97.77% 0.95%);
+      -webkit-clip-path: circle(100px at 97.77% 0.95%);
+      transition: all 1s ease-out;
+      pointer-events: none; }
+      nav .nav-links.open {
+        pointer-events: all;
+        clip-path: circle(1000px at 90% 10%);
+        -webkit-clip-path: circle(1200px at 90% 10%); }
+      nav .nav-links li {
+        opacity: 0;
+        visibility: hidden; }
+        nav .nav-links li:nth-child(1) {
+          transition: all 0.5s ease 0.2s; }
+        nav .nav-links li:nth-child(2) {
+          transition: all 0.5s ease 0.4s; }
+        nav .nav-links li:nth-child(3) {
+          transition: all 0.5s ease 0.6s; }
+        nav .nav-links li:nth-child(4) {
+          transition: all 0.5s ease 0.8s; }
+        nav .nav-links li:nth-child(5) {
+          transition: all 0.5s ease 0.1s; }
+        nav .nav-links li a {
+          font-size: 25px;
+          font-weight: bold; }
+        nav .nav-links li.fade {
+          visibility: visible;
+          opacity: 1; } }
+
+@media only screen and (orientation: landscape) and (max-height: 380px) and (max-width: 800px) {
+  .hero {
+    align-items: stretch !important; }
+  .form-box {
+    border: 1px solid #546e7a; } }
+
+.hero {
+  background-image: linear-gradient(rgba(30, 115, 190, 0.51), rgba(30, 115, 190, 0.51)), url("../images/cave-1800.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 110vh;
+  padding-top: 10vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center; }
+  .hero .box-text {
+    text-align: center;
+    color: #ffffff; }
+    .hero .box-text h1 {
+      font-weight: bold; }
+    .hero .box-text p {
+      font-size: 16px;
+      line-height: 24px; }
+  .hero .form-box {
+    border-radius: 2px;
+    padding: 35px 30px; }
+    .hero .form-box p {
+      margin: 0;
+      color: #546e7a;
+      font-size: 13px;
+      font-weight: 700; }
+    .hero .form-box h4 {
+      color: #000000;
+      font-weight: bold;
+      font-size: 15px;
+      padding: 20px 0px; }
+    .hero .form-box .form-input {
+      margin: 0.5em 0px;
+      width: 100%;
+      padding: 5px; }
+    .hero .form-box .btn-send {
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 8px 30px;
+      margin: 0 auto; }
+
+.section-bg-color {
+  background-color: #f7f7f7; }
+
+.eff {
+  visibility: hidden; }
+
+@media screen and (max-width: 900px) {
+  .section2 .container {
+    width: 100%;
+    max-width: none; } }
+
+.section2 {
+  padding: 150px 0;
+  color: black; }
+  .section2 .box-text-header {
+    text-align: center; }
+  .section2 .mini-box {
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 10%;
+    height: auto;
+    margin-top: 45px;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 50px 0px rgba(119, 86, 129, 0.15); }
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    visibility: visible; }
+  to {
+    opacity: 1; } }
+    .section2 .mini-box .svg-icon {
+      font-size: 50px; }
+    .section2 .mini-box:hover {
+      border: none;
+      box-shadow: 0 8px 6px -6px black;
+      transition: linear 0.5s;
+      -webkit-transition: linear 0.5s;
+      -moz-transition: linear 0.5s;
+      -ms-transition: linear 0.5s;
+      -o-transition: linear 0.5s;
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      z-index: 1; }
+
+.section3 {
+  padding: 150px 0; }
+  .section3 .img-full {
+    width: 100%;
+    height: auto; }
+  .section3 .box-text {
+    padding: 25px 0px;
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid purple; }
+  .section3 ul {
+    margin-left: 5%; }
+
+@media screen and (max-width: 900px) {
+  .section4 .container {
+    width: 100%;
+    max-width: none; } }
+
+.section4 {
+  padding: 150px 0;
+  color: black; }
+  .section4 .box-text-header {
+    text-align: center; }
+  .section4 .mini-box {
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 10%;
+    height: auto;
+    margin-top: 45px;
+    background-color: #ffffff;
+    box-shadow: 0px 10px 50px 0px rgba(119, 86, 129, 0.15); }
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    visibility: visible; }
+  to {
+    opacity: 1; } }
+    .section4 .mini-box .svg-icon {
+      font-size: 50px; }
+    .section4 .mini-box:hover {
+      border: none;
+      box-shadow: 0 8px 6px -6px black;
+      transition: linear 0.5s;
+      -webkit-transition: linear 0.5s;
+      -moz-transition: linear 0.5s;
+      -ms-transition: linear 0.5s;
+      -o-transition: linear 0.5s;
+      transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -moz-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      z-index: 1; }
+
+.footer {
+  background-image: linear-gradient(rgba(30, 115, 190, 0.51), rgba(30, 115, 190, 0.51)), url("../images/cave-1800.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 150px 0px 50px 0px;
+  color: #ffffff; }
+  .footer .footer-box-text p {
+    text-align: justify; }
+  .footer .footer-box-contact ul {
+    text-decoration: none;
+    list-style: none; }
+    .footer .footer-box-contact ul li {
+      display: block;
+      font-weight: bold; }
+      .footer .footer-box-contact ul li i {
+        padding: 20px 10px 10px 0px;
+        font-size: 30px; }
+  .footer .social-media i {
+    font-size: 50px;
+    padding: 0 20px 20px 0px;
+    color: black; }
+  .footer .social-media :hover {
+    color: #1da1f2 !important; }
